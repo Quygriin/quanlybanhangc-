@@ -30,7 +30,7 @@ namespace quanlybanhang
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            Class.Functions.Connect(); //Mở kết nối
+            //Class.Functions.Connect(); //Mở kết nối
 
         }
 
@@ -56,7 +56,7 @@ namespace quanlybanhang
             //f.FormBorderStyle = FormBorderStyle.None;
             //f.MinimumSize = new Size(300, 300);
            f.MdiParent = this;
-            f.Show();
+           f.Show();
         }
 
         private void mnuHangHoa_Click(object sender, EventArgs e)

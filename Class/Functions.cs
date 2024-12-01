@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
-
+using System.Text.RegularExpressions;
+using System.Security.Cryptography;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace quanlybanhang.Class
 {
-     class Functions
+    class Functions
     {
         public static SqlConnection Con;
         public static void Connect()
         {
-            Con = new SqlConnection();  
+            Con = new SqlConnection();
             //Con.ConnectionString = Properties.Settings.Default.QLBanHang;
             Con.ConnectionString = "Data Source=LAPTOP-U119GDF0\\SQLEXPRESS;Initial Catalog=quanlybanhangc#;User ID=sa;Password=123456;";
             Con.Open();                  //Mở kết nối
@@ -236,6 +238,37 @@ namespace quanlybanhang.Class
             }
             cmd.Dispose();//Giải phóng bộ nhớ
             cmd = null;
+        }
+        public static bool IsEmail(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return false;
+
+            // Biểu thức chính quy kiểm tra email
+            string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            Regex regex = new Regex(emailPattern);
+            return regex.IsMatch(email);
+        }
+        public static string MahoaSha1(string input)
+        {
+           
+                byte[] inputBytes = Encoding.UTF8.GetBytes(input+"hdsjhdj");
+                byte[] hashBytes = new SHA1CryptoServiceProvider().ComputeHash(inputBytes);
+
+               String m="";
+            foreach (byte b in hashBytes)
+            {
+                m += b;
+            }
+                return m;
+        }
+       public  static bool CheckAccount(string account)
+        {
+            if (string.IsNullOrWhiteSpace(account))
+                return false;
+            // Biểu thức chính quy: chỉ cho phép chữ cái và số, độ dài tối thiểu 6 ký tự
+            string pattern = @"^[a-zA-Z0-9]{6,}$";
+            return Regex.IsMatch(account, pattern);
         }
     }
 }

@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using quanlybanhang.Class;
-
 namespace quanlybanhang
 {
     public partial class frmTimHDBan : Form

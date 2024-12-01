@@ -78,6 +78,7 @@
             this.txtTongTien = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -701,5 +702,6 @@
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Label lblBangChu;
+        private System.DirectoryServices.DirectoryEntry directoryEntry1;
     }
 }
