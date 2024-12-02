@@ -521,5 +521,15 @@ namespace quanlybanhang
                 LoadDataGridView();
             }
         }
+
+        private void txtMaHDBan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpNgayBan_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

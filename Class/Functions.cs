@@ -19,7 +19,7 @@ namespace quanlybanhang.Class
         {
             Con = new SqlConnection();
             //Con.ConnectionString = Properties.Settings.Default.QLBanHang;
-            Con.ConnectionString = "Data Source=LAPTOP-U119GDF0\\SQLEXPRESS;Initial Catalog=quanlybanhangc#;User ID=sa;Password=123456;";
+            Con.ConnectionString = @"Data Source=acer-nitro5;Initial Catalog=quanlybanhangc#;Integrated Security=True";
             Con.Open();                  //Mở kết nối
             //Kiểm tra kết nối
             if (Con.State == ConnectionState.Open)
