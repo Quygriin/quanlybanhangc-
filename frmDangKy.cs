@@ -17,6 +17,7 @@ namespace quanlybanhang
         public frmDangKy()
         {
             InitializeComponent();
+
         }
         ErrorProvider errorProvider = new ErrorProvider();
         private bool HasAnyError()

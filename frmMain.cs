@@ -36,7 +36,9 @@ namespace quanlybanhang
 
         private void mnuChatLieu_Click(object sender, EventArgs e)
         {
-
+            frmChatlieu fcl = new frmChatlieu();
+            fcl.MdiParent = this;
+            fcl.Show();
         }
 
         private void mnuFindHoaDon_Click(object sender, EventArgs e)
@@ -67,6 +69,20 @@ namespace quanlybanhang
             f.WindowState = FormWindowState.Normal;
             f.MdiParent = this;
             f.Show();
+        }
+
+        private void mnuNhanVien_Click(object sender, EventArgs e)
+        {
+            frmnhanvien fnv = new frmnhanvien();
+            fnv.MdiParent = this;
+            fnv.Show();
+        }
+
+        private void mnuKhachHang_Click(object sender, EventArgs e)
+        {
+            frmkhachhang fkh = new frmkhachhang();
+            fkh.MdiParent = this;  
+            fkh.Show();
         }
     }
 }
