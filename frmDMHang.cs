@@ -71,11 +71,13 @@ namespace quanlybanhang
             Functions.FillCombo(sql, cboMaChatLieu, "MaChatLieu", "TenChatLieu");
             cboMaChatLieu.SelectedIndex = -1;
             ResetValues();
+           
+            
         }
         private void LoadDataGridView()
         {
             string sql;
-            sql = "SELECT * from tblHang";
+            sql = "SELECT * from tblHang where mahang= N'" + txtMaHang.Text + "'";
             tblH = Functions.GetDataToTable(sql);
             dgvHang.DataSource = tblH;
             dgvHang.Columns[0].HeaderText = "Mã hàng";
@@ -86,14 +88,7 @@ namespace quanlybanhang
             dgvHang.Columns[5].HeaderText = "Đơn giá bán";
             dgvHang.Columns[6].HeaderText = "Ảnh";
             dgvHang.Columns[7].HeaderText = "Ghi chú";
-            dgvHang.Columns[0].Width = 80;
-            dgvHang.Columns[1].Width = 140;
-            dgvHang.Columns[2].Width = 80;
-            dgvHang.Columns[3].Width = 80;
-            dgvHang.Columns[4].Width = 100;
-            dgvHang.Columns[5].Width = 100;
-            dgvHang.Columns[6].Width = 200;
-            dgvHang.Columns[7].Width = 300;
+           
             dgvHang.AllowUserToAddRows = false;
             dgvHang.EditMode = DataGridViewEditMode.EditProgrammatically;
         }

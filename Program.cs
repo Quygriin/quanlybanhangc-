@@ -16,7 +16,7 @@ namespace quanlybanhang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmBaoCaoHangTon());
+            Application.Run(new frmMain());
         }
     }
 }

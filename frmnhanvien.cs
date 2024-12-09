@@ -14,7 +14,7 @@ namespace quanlybanhang
 {
     public partial class frmnhanvien : Form
     {
-        string sqlstr = @"Data Source=ACER-NITRO5;Initial Catalog=quanlybanhangc#;Integrated Security=True";
+        string sqlstr = @"Data Source=LAPTOP-U119GDF0\SQLEXPRESS;Initial Catalog=quanlybanhangc#;Integrated Security=True";
         SqlConnection sqlcon = null;
         SqlDataAdapter sqldata = null;
         DataSet ds = null;
@@ -254,6 +254,26 @@ namespace quanlybanhang
                 MessageBox.Show("xóa thất bại");
                 return;
             }
+        }
+
+        private void frmnhanvien_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

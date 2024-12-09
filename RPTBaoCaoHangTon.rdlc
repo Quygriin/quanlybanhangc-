@@ -6,19 +6,19 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.19038in</Width>
+              <Width>1.72163in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.19038in</Width>
+              <Width>1.72163in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.19038in</Width>
+              <Width>1.72163in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.19038in</Width>
+              <Width>1.72163in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.19038in</Width>
+              <Width>1.72163in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -569,7 +569,7 @@
         <DataSetName>baocaohangton</DataSetName>
         <Top>0.06944in</Top>
         <Height>0.75in</Height>
-        <Width>5.9519in</Width>
+        <Width>8.60815in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -580,7 +580,7 @@
     <Height>0.85812in</Height>
     <Style />
   </Body>
-  <Width>5.9519in</Width>
+  <Width>8.60815in</Width>
   <Page>
     <PageHeader>
       <Height>1in</Height>
@@ -606,7 +606,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox2</rd:DefaultName>
           <Top>0.24875in</Top>
-          <Left>1.67063in</Left>
+          <Left>2.97792in</Left>
           <Height>0.25in</Height>
           <Width>1.64062in</Width>
           <Style>
@@ -636,8 +636,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>0.68056in</Top>
-          <Left>3.31646in</Left>
+          <Top>0.70833in</Top>
+          <Left>5.56125in</Left>
           <Height>0.25in</Height>
           <Width>1.61979in</Width>
           <ZIndex>1</ZIndex>
@@ -659,7 +659,7 @@
       </Style>
     </PageHeader>
     <PageFooter>
-      <Height>0.42709in</Height>
+      <Height>0.66147in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -679,7 +679,7 @@
           </Paragraphs>
           <rd:DefaultName>Textbox19</rd:DefaultName>
           <Top>0.06944in</Top>
-          <Left>1.81826in</Left>
+          <Left>3.27659in</Left>
           <Height>0.25in</Height>
           <Width>1.75288in</Width>
           <Style>

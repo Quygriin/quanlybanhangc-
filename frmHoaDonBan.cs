@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using quanlybanhang.Class;
 using COMExcel = Microsoft.Office.Interop.Excel;
+using System.Text.RegularExpressions;
 namespace quanlybanhang
 {
     public partial class frmHoaDonBan : Form
@@ -65,12 +66,12 @@ namespace quanlybanhang
             dgvHDBanHang.Columns[3].HeaderText = "Đơn giá";
             dgvHDBanHang.Columns[4].HeaderText = "Giảm giá %";
             dgvHDBanHang.Columns[5].HeaderText = "Thành tiền";
-            dgvHDBanHang.Columns[0].Width = 80;
-            dgvHDBanHang.Columns[1].Width = 130;
-            dgvHDBanHang.Columns[2].Width = 80;
-            dgvHDBanHang.Columns[3].Width = 90;
-            dgvHDBanHang.Columns[4].Width = 90;
-            dgvHDBanHang.Columns[5].Width = 90;
+            //dgvHDBanHang.Columns[0].Width = 80;
+            //dgvHDBanHang.Columns[1].Width = 130;
+            //dgvHDBanHang.Columns[2].Width = 80;
+            //dgvHDBanHang.Columns[3].Width = 90;
+            //dgvHDBanHang.Columns[4].Width = 90;
+            //dgvHDBanHang.Columns[5].Width = 90;
             dgvHDBanHang.AllowUserToAddRows = false;
             dgvHDBanHang.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
@@ -125,7 +126,7 @@ namespace quanlybanhang
             cboMaNhanVien.Text = "";
             cboMaKhach.Text = "";
             txtTongTien.Text = "0";
-            lblBangChu.Text = "Bằng chữ: ";
+           
             cboMaHang.Text = "";
             txtSoLuong.Text = "";
             txtGiamGia.Text = "0";
@@ -139,8 +140,8 @@ namespace quanlybanhang
             sql = "SELECT MaHDBan FROM tblHDBan WHERE MaHDBan=N'" + txtMaHDBan.Text + "'";
             if (!Functions.CheckKey(sql))
             {
-                // Mã hóa đơn chưa có, tiến hành lưu các thông tin chung
-                // Mã HDBan được sinh tự động do đó không có trường hợp trùng khóa
+                //Mã hóa đơn chưa có, tiến hành lưu các thông tin chung
+                //Mã HDBan được sinh tự động do đó không có trường hợp trùng khóa
                 //if (txtNgayBan.Text.Length == 0)
                 //{
                 //    MessageBox.Show("Bạn phải nhập ngày bán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -160,7 +161,7 @@ namespace quanlybanhang
                     return;
                 }
                 sql = "INSERT INTO tblHDBan(MaHDBan, NgayBan, MaNhanVien, MaKhach, TongTien) VALUES (N'" + txtMaHDBan.Text.Trim() + "','" +
-                       dtpNgayBan.Value + "',N'" + cboMaNhanVien.SelectedValue + "',N'" +
+                       dtpNgayBan.Value.Date + "',N'" + cboMaNhanVien.SelectedValue + "',N'" +
                         cboMaKhach.SelectedValue + "'," + txtTongTien.Text + ")";
                 Functions.RunSQL(sql);
             }
@@ -178,9 +179,9 @@ namespace quanlybanhang
                 txtSoLuong.Focus();
                 return;
             }
-            if (txtGiamGia.Text.Trim().Length == 0)
+            if (txtGiamGia.Text.Trim().Length == 0 || Convert.ToDouble(txtGiamGia.Text.Trim()) < 0|| Convert.ToDouble(txtGiamGia.Text.Trim())>100)
             {
-                MessageBox.Show("Bạn phải nhập giảm giá", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Nhập giảm giá từ 1-100", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtGiamGia.Focus();
                 return;
             }
@@ -283,6 +284,12 @@ namespace quanlybanhang
 
         private void txtGiamGia_TextChanged(object sender, EventArgs e)
         {
+            if (!Regex.IsMatch(txtGiamGia.Text, @"^\d*$"))
+            {
+                MessageBox.Show("Chỉ được nhập số.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtGiamGia.Text = Regex.Replace(txtGiamGia.Text, @"[^\d]", ""); // Xóa các ký tự không hợp lệ
+                txtGiamGia.SelectionStart = txtGiamGia.Text.Length; // Đặt lại con trỏ
+            }
             //Khi thay đổi giảm giá thì tính lại thành tiền
             double tt, sl, dg, gg;
             if (txtSoLuong.Text == "")
@@ -528,6 +535,11 @@ namespace quanlybanhang
         }
 
         private void dtpNgayBan_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

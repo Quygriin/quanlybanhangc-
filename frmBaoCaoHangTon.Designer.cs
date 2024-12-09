@@ -32,8 +32,8 @@
             this.btnTaoBaoCao = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.rpvBaoCaoHangTon = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -98,6 +98,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmBaoCaoHangTon";
             this.Text = "frmBaoCaoHangTon";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmBaoCaoHangTon_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

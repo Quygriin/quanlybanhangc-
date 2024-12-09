@@ -44,6 +44,10 @@ namespace quanlybanhang
                 rpvBaoCaoHangTon.RefreshReport();
 
             }
+            else
+            {
+                MessageBox.Show("không tìm thấy");
+            }
 
 
         }

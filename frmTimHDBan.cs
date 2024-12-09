@@ -59,7 +59,7 @@ namespace quanlybanhang
             }
             sql = "SELECT * FROM tblHDBan WHERE 1=1";
             if (txtMaHDBan1.Text != "")
-                sql = sql + " AND MaHDBan Like N'%" + txtMaHDBan1.Text + "%'";
+                sql = sql + " AND MaHDBan Like N'" + txtMaHDBan1.Text.Trim() + "%'";
             if (txtThang.Text != "")
                 sql = sql + " AND MONTH(NgayBan) =" + txtThang.Text;
             if (txtNam.Text != "")
@@ -87,11 +87,7 @@ namespace quanlybanhang
             dgvTKHoaDon.Columns[2].HeaderText = "Ngày bán";
             dgvTKHoaDon.Columns[3].HeaderText = "Mã khách";
             dgvTKHoaDon.Columns[4].HeaderText = "Tổng tiền";
-            dgvTKHoaDon.Columns[0].Width = 150;
-            dgvTKHoaDon.Columns[1].Width = 100;
-            dgvTKHoaDon.Columns[2].Width = 80;
-            dgvTKHoaDon.Columns[3].Width = 80;
-            dgvTKHoaDon.Columns[4].Width = 80;
+            
             dgvTKHoaDon.AllowUserToAddRows = false;
             dgvTKHoaDon.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
@@ -119,6 +115,7 @@ namespace quanlybanhang
                 mahd = dgvTKHoaDon.CurrentRow.Cells["MaHDBan"].Value.ToString();
                 frmHoaDonBan frm = new frmHoaDonBan();
                 frm.txtMaHDBan.Text = mahd;
+                frm.WindowState = FormWindowState.Normal;
                 frm.StartPosition = FormStartPosition.CenterParent;
                 frm.ShowDialog();
             }
@@ -127,6 +124,11 @@ namespace quanlybanhang
         private void btnDong_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgvTKHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

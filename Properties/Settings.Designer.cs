@@ -54,5 +54,16 @@ namespace quanlybanhang.Properties {
                 this["đ"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=LAPTOP-U119GDF0\\SQLEXPRESS;Initial Catalog=quanlybanhangc#;Persist Se" +
+            "curity Info=True;User ID=SA;Password=123456;TrustServerCertificate=True")]
+        public string quanlybanhangc_ConnectionString {
+            get {
+                return ((string)(this["quanlybanhangc_ConnectionString"]));
+            }
+        }
     }
 }

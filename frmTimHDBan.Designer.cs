@@ -40,6 +40,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.txtMaHDBan1 = new System.Windows.Forms.TextBox();
             this.txtTongTien = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.txtNam = new System.Windows.Forms.TextBox();
@@ -87,7 +88,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.dgvTKHoaDon = new System.Windows.Forms.DataGridView();
-            this.txtMaHDBan1 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -105,7 +106,7 @@
             this.panel1.Controls.Add(this.btnTimLai);
             this.panel1.Controls.Add(this.btnTImKiem);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 928);
+            this.panel1.Location = new System.Drawing.Point(0, 1036);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1612, 87);
             this.panel1.TabIndex = 0;
@@ -148,7 +149,7 @@
             // 
             this.panel2.Controls.Add(this.label24);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 853);
+            this.panel2.Location = new System.Drawing.Point(0, 961);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1612, 75);
             this.panel2.TabIndex = 1;
@@ -244,6 +245,7 @@
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.label25);
             this.panel8.Controls.Add(this.txtMaHDBan1);
             this.panel8.Controls.Add(this.txtTongTien);
             this.panel8.Controls.Add(this.label23);
@@ -259,12 +261,19 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1612, 273);
+            this.panel8.Size = new System.Drawing.Size(1612, 267);
             this.panel8.TabIndex = 21;
+            // 
+            // txtMaHDBan1
+            // 
+            this.txtMaHDBan1.Location = new System.Drawing.Point(280, 85);
+            this.txtMaHDBan1.Name = "txtMaHDBan1";
+            this.txtMaHDBan1.Size = new System.Drawing.Size(308, 31);
+            this.txtMaHDBan1.TabIndex = 22;
             // 
             // txtTongTien
             // 
-            this.txtTongTien.Location = new System.Drawing.Point(911, 132);
+            this.txtTongTien.Location = new System.Drawing.Point(922, 157);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.Size = new System.Drawing.Size(312, 31);
             this.txtTongTien.TabIndex = 21;
@@ -275,7 +284,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.ForeColor = System.Drawing.Color.Blue;
-            this.label23.Location = new System.Drawing.Point(709, 132);
+            this.label23.Location = new System.Drawing.Point(720, 157);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(102, 25);
             this.label23.TabIndex = 20;
@@ -283,7 +292,7 @@
             // 
             // txtNam
             // 
-            this.txtNam.Location = new System.Drawing.Point(473, 126);
+            this.txtNam.Location = new System.Drawing.Point(484, 151);
             this.txtNam.Multiline = true;
             this.txtNam.Name = "txtNam";
             this.txtNam.Size = new System.Drawing.Size(104, 31);
@@ -293,7 +302,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.ForeColor = System.Drawing.Color.Blue;
-            this.label19.Location = new System.Drawing.Point(401, 132);
+            this.label19.Location = new System.Drawing.Point(412, 157);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(56, 25);
             this.label19.TabIndex = 18;
@@ -302,7 +311,7 @@
             // txtThang
             // 
             this.txtThang.AcceptsReturn = true;
-            this.txtThang.Location = new System.Drawing.Point(265, 126);
+            this.txtThang.Location = new System.Drawing.Point(276, 151);
             this.txtThang.Multiline = true;
             this.txtThang.Name = "txtThang";
             this.txtThang.Size = new System.Drawing.Size(104, 31);
@@ -312,7 +321,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.ForeColor = System.Drawing.Color.Blue;
-            this.label20.Location = new System.Drawing.Point(112, 129);
+            this.label20.Location = new System.Drawing.Point(123, 154);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(73, 25);
             this.label20.TabIndex = 16;
@@ -320,7 +329,7 @@
             // 
             // txtMaNhanVien
             // 
-            this.txtMaNhanVien.Location = new System.Drawing.Point(265, 182);
+            this.txtMaNhanVien.Location = new System.Drawing.Point(276, 207);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
             this.txtMaNhanVien.Size = new System.Drawing.Size(312, 31);
             this.txtMaNhanVien.TabIndex = 15;
@@ -329,7 +338,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.ForeColor = System.Drawing.Color.Blue;
-            this.label18.Location = new System.Drawing.Point(112, 185);
+            this.label18.Location = new System.Drawing.Point(123, 210);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(148, 25);
             this.label18.TabIndex = 14;
@@ -337,7 +346,7 @@
             // 
             // txtMaKhach
             // 
-            this.txtMaKhach.Location = new System.Drawing.Point(911, 60);
+            this.txtMaKhach.Location = new System.Drawing.Point(922, 85);
             this.txtMaKhach.Name = "txtMaKhach";
             this.txtMaKhach.Size = new System.Drawing.Size(312, 31);
             this.txtMaKhach.TabIndex = 13;
@@ -346,7 +355,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.ForeColor = System.Drawing.Color.Blue;
-            this.label21.Location = new System.Drawing.Point(709, 66);
+            this.label21.Location = new System.Drawing.Point(720, 91);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(160, 25);
             this.label21.TabIndex = 12;
@@ -356,7 +365,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.Color.Blue;
-            this.label22.Location = new System.Drawing.Point(112, 66);
+            this.label22.Location = new System.Drawing.Point(123, 91);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(132, 25);
             this.label22.TabIndex = 10;
@@ -661,34 +670,45 @@
             // 
             // dgvTKHoaDon
             // 
+            this.dgvTKHoaDon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTKHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTKHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvTKHoaDon.Location = new System.Drawing.Point(0, 273);
             this.dgvTKHoaDon.Name = "dgvTKHoaDon";
             this.dgvTKHoaDon.RowHeadersWidth = 82;
             this.dgvTKHoaDon.RowTemplate.Height = 33;
-            this.dgvTKHoaDon.Size = new System.Drawing.Size(1612, 580);
+            this.dgvTKHoaDon.Size = new System.Drawing.Size(1612, 688);
             this.dgvTKHoaDon.TabIndex = 3;
+            this.dgvTKHoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTKHoaDon_CellContentClick);
             this.dgvTKHoaDon.DoubleClick += new System.EventHandler(this.dgvTKHoaDon_DoubleClick);
             // 
-            // txtMaHDBan1
+            // label25
             // 
-            this.txtMaHDBan1.Location = new System.Drawing.Point(269, 60);
-            this.txtMaHDBan1.Name = "txtMaHDBan1";
-            this.txtMaHDBan1.Size = new System.Drawing.Size(308, 31);
-            this.txtMaHDBan1.TabIndex = 22;
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label25.ForeColor = System.Drawing.Color.Blue;
+            this.label25.Location = new System.Drawing.Point(541, 9);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(329, 42);
+            this.label25.TabIndex = 23;
+            this.label25.Text = "Tìm kiếm hóa đơn";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmTimHDBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1612, 1015);
+            this.ClientSize = new System.Drawing.Size(1612, 1123);
             this.Controls.Add(this.dgvTKHoaDon);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmTimHDBan";
             this.Text = "frmTimHDBan";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmTimHDBan_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -772,5 +792,6 @@
         private System.Windows.Forms.Button btnTimLai;
         private System.Windows.Forms.Button btnTImKiem;
         private System.Windows.Forms.TextBox txtMaHDBan1;
+        private System.Windows.Forms.Label label25;
     }
 }
