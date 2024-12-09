@@ -127,6 +127,9 @@
   <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="approve-invoice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\approve-invoice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="removeproduct" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\removeproduct.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,6 +148,9 @@
   <data name="search1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="update-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,6 +163,9 @@
   <data name="search@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="technology1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\technology1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add-to-the-cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add-to-the-cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,7 +175,7 @@
   <data name="repair" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\repair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="update-arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\update-arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="remove-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

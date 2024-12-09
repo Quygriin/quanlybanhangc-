@@ -103,9 +103,29 @@ namespace quanlybanhang.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap approve_invoice {
+            get {
+                object obj = ResourceManager.GetObject("approve-invoice", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logout {
             get {
                 object obj = ResourceManager.GetObject("logout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap remove_button {
+            get {
+                object obj = ResourceManager.GetObject("remove-button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +226,16 @@ namespace quanlybanhang.Properties {
         internal static System.Drawing.Bitmap technology {
             get {
                 object obj = ResourceManager.GetObject("technology", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap technology1 {
+            get {
+                object obj = ResourceManager.GetObject("technology1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

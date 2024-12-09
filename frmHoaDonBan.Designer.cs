@@ -53,11 +53,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnThem = new System.Windows.Forms.Button();
             this.btnDong = new System.Windows.Forms.Button();
-            this.btnInHoaDon = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvHDBanHang = new System.Windows.Forms.DataGridView();
@@ -80,6 +76,10 @@
             this.label24 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnInHoaDon = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnLuu = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -330,6 +330,8 @@
             // btnTimKiem
             // 
             this.btnTimKiem.ForeColor = System.Drawing.Color.Blue;
+            this.btnTimKiem.Image = global::quanlybanhang.Properties.Resources.search;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTimKiem.Location = new System.Drawing.Point(525, 6);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(212, 47);
@@ -352,20 +354,11 @@
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // btnThem
-            // 
-            this.btnThem.ForeColor = System.Drawing.Color.Blue;
-            this.btnThem.Location = new System.Drawing.Point(208, 12);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(212, 53);
-            this.btnThem.TabIndex = 8;
-            this.btnThem.Text = "Thêm hóa đơn";
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
             // btnDong
             // 
             this.btnDong.ForeColor = System.Drawing.Color.Blue;
+            this.btnDong.Image = global::quanlybanhang.Properties.Resources.logout;
+            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDong.Location = new System.Drawing.Point(1312, 16);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(212, 53);
@@ -373,40 +366,6 @@
             this.btnDong.Text = "Đóng";
             this.btnDong.UseVisualStyleBackColor = true;
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
-            // 
-            // btnInHoaDon
-            // 
-            this.btnInHoaDon.ForeColor = System.Drawing.Color.Blue;
-            this.btnInHoaDon.Location = new System.Drawing.Point(1035, 12);
-            this.btnInHoaDon.Name = "btnInHoaDon";
-            this.btnInHoaDon.Size = new System.Drawing.Size(212, 53);
-            this.btnInHoaDon.TabIndex = 6;
-            this.btnInHoaDon.Text = "In hóa đơn";
-            this.btnInHoaDon.UseVisualStyleBackColor = true;
-            this.btnInHoaDon.Click += new System.EventHandler(this.btnInHoaDon_Click);
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.AccessibleDescription = "";
-            this.btnXoa.ForeColor = System.Drawing.Color.Blue;
-            this.btnXoa.Location = new System.Drawing.Point(748, 12);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(212, 53);
-            this.btnXoa.TabIndex = 5;
-            this.btnXoa.Text = "Hủy hóa đơn";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.ForeColor = System.Drawing.Color.Blue;
-            this.btnLuu.Location = new System.Drawing.Point(471, 12);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(212, 53);
-            this.btnLuu.TabIndex = 4;
-            this.btnLuu.Text = "Lưu hóa đơn";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // groupBox2
             // 
@@ -603,6 +562,59 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // btnThem
+            // 
+            this.btnThem.ForeColor = System.Drawing.Color.Blue;
+            this.btnThem.Image = global::quanlybanhang.Properties.Resources.add;
+            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.Location = new System.Drawing.Point(208, 12);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(212, 53);
+            this.btnThem.TabIndex = 8;
+            this.btnThem.Text = "Thêm hóa đơn";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // btnInHoaDon
+            // 
+            this.btnInHoaDon.ForeColor = System.Drawing.Color.Blue;
+            this.btnInHoaDon.Image = global::quanlybanhang.Properties.Resources.technology1;
+            this.btnInHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInHoaDon.Location = new System.Drawing.Point(1035, 12);
+            this.btnInHoaDon.Name = "btnInHoaDon";
+            this.btnInHoaDon.Size = new System.Drawing.Size(212, 53);
+            this.btnInHoaDon.TabIndex = 6;
+            this.btnInHoaDon.Text = "In hóa đơn";
+            this.btnInHoaDon.UseVisualStyleBackColor = true;
+            this.btnInHoaDon.Click += new System.EventHandler(this.btnInHoaDon_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.AccessibleDescription = "";
+            this.btnXoa.ForeColor = System.Drawing.Color.Blue;
+            this.btnXoa.Image = global::quanlybanhang.Properties.Resources.removeproduct;
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(748, 12);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(212, 53);
+            this.btnXoa.TabIndex = 5;
+            this.btnXoa.Text = "Hủy hóa đơn";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.ForeColor = System.Drawing.Color.Blue;
+            this.btnLuu.Image = global::quanlybanhang.Properties.Resources.save;
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(471, 12);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(212, 53);
+            this.btnLuu.TabIndex = 4;
+            this.btnLuu.Text = "Lưu hóa đơn";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // frmHoaDonBan
             // 

@@ -78,9 +78,9 @@
             // 
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.menuStrip1.Location = new System.Drawing.Point(0, 42);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 48);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1695, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1695, 48);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -97,7 +97,7 @@
             this.mnutrogiup});
             this.mnuFile.Location = new System.Drawing.Point(0, 0);
             this.mnuFile.Name = "mnuFile";
-            this.mnuFile.Size = new System.Drawing.Size(1695, 42);
+            this.mnuFile.Size = new System.Drawing.Size(1695, 48);
             this.mnuFile.TabIndex = 3;
             this.mnuFile.Text = "menuStrip2";
             // 
@@ -107,14 +107,14 @@
             this.mnuThoat});
             this.tậpToolStripMenuItem.Image = global::quanlybanhang.Properties.Resources.addproduct;
             this.tậpToolStripMenuItem.Name = "tậpToolStripMenuItem";
-            this.tậpToolStripMenuItem.Size = new System.Drawing.Size(140, 38);
+            this.tậpToolStripMenuItem.Size = new System.Drawing.Size(140, 40);
             this.tậpToolStripMenuItem.Text = "&Tập tin";
             this.tậpToolStripMenuItem.Click += new System.EventHandler(this.tậpToolStripMenuItem_Click);
             // 
             // mnuThoat
             // 
             this.mnuThoat.Name = "mnuThoat";
-            this.mnuThoat.Size = new System.Drawing.Size(359, 44);
+            this.mnuThoat.Size = new System.Drawing.Size(208, 44);
             this.mnuThoat.Text = "Thoát";
             this.mnuThoat.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
@@ -125,9 +125,9 @@
             this.mnuNhanVien,
             this.mnuKhachHang,
             this.mnuHangHoa});
-            this.mnuDanhmuc.Image = global::quanlybanhang.Properties.Resources.technology;
+            this.mnuDanhmuc.Image = global::quanlybanhang.Properties.Resources.approve_invoice;
             this.mnuDanhmuc.Name = "mnuDanhmuc";
-            this.mnuDanhmuc.Size = new System.Drawing.Size(176, 38);
+            this.mnuDanhmuc.Size = new System.Drawing.Size(176, 40);
             this.mnuDanhmuc.Text = "&Danh mục";
             // 
             // mnuChatLieu
@@ -164,13 +164,13 @@
             this.mnuHoaDonBan});
             this.mnuHoaDon.Image = global::quanlybanhang.Properties.Resources.add_to_the_cart;
             this.mnuHoaDon.Name = "mnuHoaDon";
-            this.mnuHoaDon.Size = new System.Drawing.Size(158, 38);
+            this.mnuHoaDon.Size = new System.Drawing.Size(158, 40);
             this.mnuHoaDon.Text = "&Hóa đơn";
             // 
             // mnuHoaDonBan
             // 
             this.mnuHoaDonBan.Name = "mnuHoaDonBan";
-            this.mnuHoaDonBan.Size = new System.Drawing.Size(359, 44);
+            this.mnuHoaDonBan.Size = new System.Drawing.Size(286, 44);
             this.mnuHoaDonBan.Text = "Hóa đơn bán";
             this.mnuHoaDonBan.Click += new System.EventHandler(this.mnuHoaDonBan_Click);
             // 
@@ -181,20 +181,20 @@
             this.mnuFindHang});
             this.mnuTimKiem.Image = global::quanlybanhang.Properties.Resources.search;
             this.mnuTimKiem.Name = "mnuTimKiem";
-            this.mnuTimKiem.Size = new System.Drawing.Size(165, 38);
+            this.mnuTimKiem.Size = new System.Drawing.Size(165, 40);
             this.mnuTimKiem.Text = "&Tìm kiếm";
             // 
             // mnuFindHoaDon
             // 
             this.mnuFindHoaDon.Name = "mnuFindHoaDon";
-            this.mnuFindHoaDon.Size = new System.Drawing.Size(359, 44);
+            this.mnuFindHoaDon.Size = new System.Drawing.Size(283, 44);
             this.mnuFindHoaDon.Text = "Tìm hóa đơn";
             this.mnuFindHoaDon.Click += new System.EventHandler(this.mnuFindHoaDon_Click);
             // 
             // mnuFindHang
             // 
             this.mnuFindHang.Name = "mnuFindHang";
-            this.mnuFindHang.Size = new System.Drawing.Size(359, 44);
+            this.mnuFindHang.Size = new System.Drawing.Size(283, 44);
             this.mnuFindHang.Text = "Tìm hàng";
             this.mnuFindHang.Click += new System.EventHandler(this.mnuFindHang_Click);
             // 
@@ -205,20 +205,20 @@
             this.mnuBCDoanhThu});
             this.mnuBaoCao.Image = global::quanlybanhang.Properties.Resources.thongke;
             this.mnuBaoCao.Name = "mnuBaoCao";
-            this.mnuBaoCao.Size = new System.Drawing.Size(150, 38);
+            this.mnuBaoCao.Size = new System.Drawing.Size(150, 40);
             this.mnuBaoCao.Text = "&Báo cáo";
             // 
             // mnuBCHangTon
             // 
             this.mnuBCHangTon.Name = "mnuBCHangTon";
-            this.mnuBCHangTon.Size = new System.Drawing.Size(359, 44);
+            this.mnuBCHangTon.Size = new System.Drawing.Size(349, 44);
             this.mnuBCHangTon.Text = "Báo cáo hàng tồn";
             this.mnuBCHangTon.Click += new System.EventHandler(this.mnuBCHangTon_Click);
             // 
             // mnuBCDoanhThu
             // 
             this.mnuBCDoanhThu.Name = "mnuBCDoanhThu";
-            this.mnuBCDoanhThu.Size = new System.Drawing.Size(359, 44);
+            this.mnuBCDoanhThu.Size = new System.Drawing.Size(349, 44);
             this.mnuBCDoanhThu.Text = "Báo cáo doanh thu";
             this.mnuBCDoanhThu.Click += new System.EventHandler(this.mnuBCDoanhThu_Click);
             // 
@@ -226,7 +226,7 @@
             // 
             this.mnutrogiup.Image = global::quanlybanhang.Properties.Resources.repair1;
             this.mnutrogiup.Name = "mnutrogiup";
-            this.mnutrogiup.Size = new System.Drawing.Size(154, 38);
+            this.mnutrogiup.Size = new System.Drawing.Size(154, 40);
             this.mnutrogiup.Text = "&Trợ giúp";
             this.mnutrogiup.Click += new System.EventHandler(this.mnutrogiup_Click);
             // 

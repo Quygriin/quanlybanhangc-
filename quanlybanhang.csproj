@@ -285,5 +285,14 @@
   <ItemGroup>
     <None Include="Resources\update-arrow.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technology1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\approve-invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove-button.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

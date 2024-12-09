@@ -64,10 +64,13 @@
             // 
             // btnthoat
             // 
-            this.btnthoat.Location = new System.Drawing.Point(997, 63);
+            this.btnthoat.ForeColor = System.Drawing.Color.Blue;
+            this.btnthoat.Image = global::quanlybanhang.Properties.Resources.logout;
+            this.btnthoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnthoat.Location = new System.Drawing.Point(953, 63);
             this.btnthoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnthoat.Name = "btnthoat";
-            this.btnthoat.Size = new System.Drawing.Size(112, 36);
+            this.btnthoat.Size = new System.Drawing.Size(156, 36);
             this.btnthoat.TabIndex = 5;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = true;
@@ -75,10 +78,13 @@
             // 
             // btnxoa
             // 
-            this.btnxoa.Location = new System.Drawing.Point(401, 63);
+            this.btnxoa.ForeColor = System.Drawing.Color.Blue;
+            this.btnxoa.Image = global::quanlybanhang.Properties.Resources.removeproduct;
+            this.btnxoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnxoa.Location = new System.Drawing.Point(423, 63);
             this.btnxoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(112, 36);
+            this.btnxoa.Size = new System.Drawing.Size(158, 36);
             this.btnxoa.TabIndex = 2;
             this.btnxoa.Text = "Xóa";
             this.btnxoa.UseVisualStyleBackColor = true;
@@ -86,10 +92,13 @@
             // 
             // btnsua
             // 
+            this.btnsua.ForeColor = System.Drawing.Color.Blue;
+            this.btnsua.Image = global::quanlybanhang.Properties.Resources.update_arrow;
+            this.btnsua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsua.Location = new System.Drawing.Point(231, 63);
             this.btnsua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(112, 36);
+            this.btnsua.Size = new System.Drawing.Size(162, 36);
             this.btnsua.TabIndex = 1;
             this.btnsua.Text = "Sửa";
             this.btnsua.UseVisualStyleBackColor = true;
@@ -97,10 +106,13 @@
             // 
             // btnthem
             // 
+            this.btnthem.ForeColor = System.Drawing.Color.Blue;
+            this.btnthem.Image = global::quanlybanhang.Properties.Resources.add;
+            this.btnthem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnthem.Location = new System.Drawing.Point(59, 63);
             this.btnthem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(112, 36);
+            this.btnthem.Size = new System.Drawing.Size(156, 36);
             this.btnthem.TabIndex = 0;
             this.btnthem.Text = "Thêm";
             this.btnthem.UseVisualStyleBackColor = true;
@@ -143,6 +155,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Blue;
             this.label4.Location = new System.Drawing.Point(66, 112);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
@@ -154,6 +167,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Blue;
             this.label3.Location = new System.Drawing.Point(66, 62);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -167,6 +181,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Blue;
             this.label2.Location = new System.Drawing.Point(603, 14);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";

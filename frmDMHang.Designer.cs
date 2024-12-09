@@ -48,11 +48,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dgvHang = new System.Windows.Forms.DataGridView();
             this.btnDong = new System.Windows.Forms.Button();
             this.btnHienThi = new System.Windows.Forms.Button();
-            this.btnBoQua = new System.Windows.Forms.Button();
-            this.dgvHang = new System.Windows.Forms.DataGridView();
             this.btnTimKiem = new System.Windows.Forms.Button();
+            this.btnBoQua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -277,39 +277,6 @@
             this.panel2.Size = new System.Drawing.Size(1620, 80);
             this.panel2.TabIndex = 1;
             // 
-            // btnDong
-            // 
-            this.btnDong.ForeColor = System.Drawing.Color.Blue;
-            this.btnDong.Location = new System.Drawing.Point(1402, 22);
-            this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(172, 45);
-            this.btnDong.TabIndex = 7;
-            this.btnDong.Text = "Đóng";
-            this.btnDong.UseVisualStyleBackColor = true;
-            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
-            // 
-            // btnHienThi
-            // 
-            this.btnHienThi.ForeColor = System.Drawing.Color.Blue;
-            this.btnHienThi.Location = new System.Drawing.Point(1198, 22);
-            this.btnHienThi.Name = "btnHienThi";
-            this.btnHienThi.Size = new System.Drawing.Size(172, 45);
-            this.btnHienThi.TabIndex = 6;
-            this.btnHienThi.Text = "Hiển thị DS";
-            this.btnHienThi.UseVisualStyleBackColor = true;
-            this.btnHienThi.Click += new System.EventHandler(this.btnHienThi_Click);
-            // 
-            // btnBoQua
-            // 
-            this.btnBoQua.ForeColor = System.Drawing.Color.Blue;
-            this.btnBoQua.Location = new System.Drawing.Point(810, 22);
-            this.btnBoQua.Name = "btnBoQua";
-            this.btnBoQua.Size = new System.Drawing.Size(172, 45);
-            this.btnBoQua.TabIndex = 4;
-            this.btnBoQua.Text = "Bỏ qua";
-            this.btnBoQua.UseVisualStyleBackColor = true;
-            this.btnBoQua.Click += new System.EventHandler(this.btnBoQua_Click);
-            // 
             // dgvHang
             // 
             this.dgvHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -323,6 +290,32 @@
             this.dgvHang.TabIndex = 2;
             this.dgvHang.Click += new System.EventHandler(this.dgvHang_Click);
             // 
+            // btnDong
+            // 
+            this.btnDong.ForeColor = System.Drawing.Color.Blue;
+            this.btnDong.Image = global::quanlybanhang.Properties.Resources.logout;
+            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDong.Location = new System.Drawing.Point(1402, 22);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Size = new System.Drawing.Size(172, 45);
+            this.btnDong.TabIndex = 7;
+            this.btnDong.Text = "Đóng";
+            this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
+            // 
+            // btnHienThi
+            // 
+            this.btnHienThi.ForeColor = System.Drawing.Color.Blue;
+            this.btnHienThi.Image = global::quanlybanhang.Properties.Resources.approve_invoice;
+            this.btnHienThi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHienThi.Location = new System.Drawing.Point(1198, 22);
+            this.btnHienThi.Name = "btnHienThi";
+            this.btnHienThi.Size = new System.Drawing.Size(172, 45);
+            this.btnHienThi.TabIndex = 6;
+            this.btnHienThi.Text = "Hiển thị DS";
+            this.btnHienThi.UseVisualStyleBackColor = true;
+            this.btnHienThi.Click += new System.EventHandler(this.btnHienThi_Click);
+            // 
             // btnTimKiem
             // 
             this.btnTimKiem.ForeColor = System.Drawing.Color.Blue;
@@ -335,6 +328,19 @@
             this.btnTimKiem.Text = "  Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // btnBoQua
+            // 
+            this.btnBoQua.ForeColor = System.Drawing.Color.Blue;
+            this.btnBoQua.Image = global::quanlybanhang.Properties.Resources.remove_button;
+            this.btnBoQua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBoQua.Location = new System.Drawing.Point(810, 22);
+            this.btnBoQua.Name = "btnBoQua";
+            this.btnBoQua.Size = new System.Drawing.Size(172, 45);
+            this.btnBoQua.TabIndex = 4;
+            this.btnBoQua.Text = "Bỏ qua";
+            this.btnBoQua.UseVisualStyleBackColor = true;
+            this.btnBoQua.Click += new System.EventHandler(this.btnBoQua_Click);
             // 
             // btnLuu
             // 

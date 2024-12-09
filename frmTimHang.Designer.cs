@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnDong = new System.Windows.Forms.Button();
             this._quanlybanhangc_DataSet1 = new quanlybanhang._quanlybanhangc_DataSet();
             this.panel2 = new System.Windows.Forms.Panel();
-            this._quanlybanhangc_DataSet2 = new quanlybanhang._quanlybanhangc_DataSet();
+            this.txtMaChatLieu = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTenHang = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtMaHang = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtMaChatLieu = new System.Windows.Forms.TextBox();
+            this._quanlybanhangc_DataSet2 = new quanlybanhang._quanlybanhangc_DataSet();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
             this._quanlybanhangc_DataSet3 = new quanlybanhang._quanlybanhangc_DataSet();
             this.dgvTImKiemHang = new System.Windows.Forms.DataGridView();
-            this.label24 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnTimKiem = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnDong = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._quanlybanhangc_DataSet1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -68,6 +68,54 @@
             this.panel1.Size = new System.Drawing.Size(1620, 160);
             this.panel1.TabIndex = 1;
             // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.ForeColor = System.Drawing.Color.Blue;
+            this.btnTimKiem.Image = global::quanlybanhang.Properties.Resources.search1;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(342, 56);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(211, 53);
+            this.btnTimKiem.TabIndex = 7;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // button2
+            // 
+            this.button2.ForeColor = System.Drawing.Color.Blue;
+            this.button2.Image = global::quanlybanhang.Properties.Resources.update_arrow;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(705, 56);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(211, 53);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Tìm lại";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.ForeColor = System.Drawing.Color.Blue;
+            this.button1.Location = new System.Drawing.Point(705, 54);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(211, 53);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Đóng";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnDong
+            // 
+            this.btnDong.ForeColor = System.Drawing.Color.Blue;
+            this.btnDong.Image = global::quanlybanhang.Properties.Resources.logout;
+            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDong.Location = new System.Drawing.Point(1069, 56);
+            this.btnDong.Name = "btnDong";
+            this.btnDong.Size = new System.Drawing.Size(211, 53);
+            this.btnDong.TabIndex = 4;
+            this.btnDong.Text = "Đóng";
+            this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
+            // 
             // _quanlybanhangc_DataSet1
             // 
             this._quanlybanhangc_DataSet1.DataSetName = "_quanlybanhangc_DataSet";
@@ -88,10 +136,12 @@
             this.panel2.Size = new System.Drawing.Size(1620, 271);
             this.panel2.TabIndex = 2;
             // 
-            // _quanlybanhangc_DataSet2
+            // txtMaChatLieu
             // 
-            this._quanlybanhangc_DataSet2.DataSetName = "_quanlybanhangc_DataSet";
-            this._quanlybanhangc_DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.txtMaChatLieu.Location = new System.Drawing.Point(967, 81);
+            this.txtMaChatLieu.Name = "txtMaChatLieu";
+            this.txtMaChatLieu.Size = new System.Drawing.Size(258, 31);
+            this.txtMaChatLieu.TabIndex = 14;
             // 
             // label4
             // 
@@ -152,12 +202,10 @@
             this.label1.Text = "Tìm hàng ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtMaChatLieu
+            // _quanlybanhangc_DataSet2
             // 
-            this.txtMaChatLieu.Location = new System.Drawing.Point(967, 81);
-            this.txtMaChatLieu.Name = "txtMaChatLieu";
-            this.txtMaChatLieu.Size = new System.Drawing.Size(258, 31);
-            this.txtMaChatLieu.TabIndex = 14;
+            this._quanlybanhangc_DataSet2.DataSetName = "_quanlybanhangc_DataSet";
+            this._quanlybanhangc_DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel3
             // 
@@ -167,6 +215,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1620, 65);
             this.panel3.TabIndex = 3;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.ForeColor = System.Drawing.Color.Red;
+            this.label24.Location = new System.Drawing.Point(12, 15);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(434, 25);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "Nháy đúp một dòng để hiện thông tin chi tiết";
             // 
             // _quanlybanhangc_DataSet3
             // 
@@ -187,64 +245,6 @@
             this.dgvTImKiemHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgvTImKiemHang.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvTImKiemHang_CellMouseDoubleClick);
             this.dgvTImKiemHang.DoubleClick += new System.EventHandler(this.dgvTImKiemHang_DoubleClick);
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.ForeColor = System.Drawing.Color.Red;
-            this.label24.Location = new System.Drawing.Point(12, 15);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(434, 25);
-            this.label24.TabIndex = 2;
-            this.label24.Text = "Nháy đúp một dòng để hiện thông tin chi tiết";
-            // 
-            // button1
-            // 
-            this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Location = new System.Drawing.Point(705, 54);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 53);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Đóng";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.ForeColor = System.Drawing.Color.Blue;
-            this.btnTimKiem.Image = global::quanlybanhang.Properties.Resources.search1;
-            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(342, 56);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(211, 53);
-            this.btnTimKiem.TabIndex = 7;
-            this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = true;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
-            // button2
-            // 
-            this.button2.ForeColor = System.Drawing.Color.Blue;
-            this.button2.Image = global::quanlybanhang.Properties.Resources.repair;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(705, 56);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(211, 53);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Tìm lại";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // btnDong
-            // 
-            this.btnDong.ForeColor = System.Drawing.Color.Blue;
-            this.btnDong.Image = global::quanlybanhang.Properties.Resources.logout;
-            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDong.Location = new System.Drawing.Point(1069, 56);
-            this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(211, 53);
-            this.btnDong.TabIndex = 4;
-            this.btnDong.Text = "Đóng";
-            this.btnDong.UseVisualStyleBackColor = true;
-            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // frmTimHang
             // 

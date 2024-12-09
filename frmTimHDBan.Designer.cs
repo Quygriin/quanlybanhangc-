@@ -40,6 +40,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.label25 = new System.Windows.Forms.Label();
             this.txtMaHDBan1 = new System.Windows.Forms.TextBox();
             this.txtTongTien = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -88,7 +89,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.dgvTKHoaDon = new System.Windows.Forms.DataGridView();
-            this.label25 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -114,6 +114,8 @@
             // btnDong
             // 
             this.btnDong.ForeColor = System.Drawing.Color.Blue;
+            this.btnDong.Image = global::quanlybanhang.Properties.Resources.logout;
+            this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDong.Location = new System.Drawing.Point(877, 17);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(211, 53);
@@ -126,6 +128,8 @@
             // 
             this.btnTimLai.AccessibleDescription = "";
             this.btnTimLai.ForeColor = System.Drawing.Color.Blue;
+            this.btnTimLai.Image = global::quanlybanhang.Properties.Resources.update_arrow;
+            this.btnTimLai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTimLai.Location = new System.Drawing.Point(603, 17);
             this.btnTimLai.Name = "btnTimLai";
             this.btnTimLai.Size = new System.Drawing.Size(211, 53);
@@ -137,6 +141,8 @@
             // btnTImKiem
             // 
             this.btnTImKiem.ForeColor = System.Drawing.Color.Blue;
+            this.btnTImKiem.Image = global::quanlybanhang.Properties.Resources.search1;
+            this.btnTImKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTImKiem.Location = new System.Drawing.Point(332, 17);
             this.btnTImKiem.Name = "btnTImKiem";
             this.btnTImKiem.Size = new System.Drawing.Size(211, 53);
@@ -263,6 +269,21 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1612, 267);
             this.panel8.TabIndex = 21;
+            // 
+            // label25
+            // 
+            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label25.ForeColor = System.Drawing.Color.Blue;
+            this.label25.Location = new System.Drawing.Point(541, 9);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(329, 42);
+            this.label25.TabIndex = 23;
+            this.label25.Text = "Tìm kiếm hóa đơn";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtMaHDBan1
             // 
@@ -681,21 +702,6 @@
             this.dgvTKHoaDon.TabIndex = 3;
             this.dgvTKHoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTKHoaDon_CellContentClick);
             this.dgvTKHoaDon.DoubleClick += new System.EventHandler(this.dgvTKHoaDon_DoubleClick);
-            // 
-            // label25
-            // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label25.ForeColor = System.Drawing.Color.Blue;
-            this.label25.Location = new System.Drawing.Point(541, 9);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(329, 42);
-            this.label25.TabIndex = 23;
-            this.label25.Text = "Tìm kiếm hóa đơn";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmTimHDBan
             // 
